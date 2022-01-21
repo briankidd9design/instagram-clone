@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/accounts/edit" component={EditProfilePage} />
           <Route exact path="/accounts/login" component={LoginPage} />
           <Route exact path="/accounts/emailsignup" component={SignUpPage} />
-          <Route path="*" component={NotFoundPage} />
+          <Route exact path="/*" component={NotFoundPage} />
     </Switch>
   </Router>
   )
